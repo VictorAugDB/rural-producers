@@ -100,3 +100,5 @@ src
 11. Testaria mais extensivamente a aplicação para detectar possíveis bugs.
 12. RBAC (Producer poderia logar e fazer algumas coisas como adicionar culturas)
 13. Subir no Render com um banco de dados postgres free.
+14. Desacoplaria do nestjs, para que houvesse mais facilidade pra mudar caso necessário.
+15. Evitaria utilizar libs como bcrypt e jsonwebtoken direto no service, criaria adapters.
