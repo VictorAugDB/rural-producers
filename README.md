@@ -17,6 +17,10 @@ npm run prisma:studio
 ```bash
 npm run test:e2e
 ```
+with swagger: go to http://localhost:3000/api
+sign up a user
+authenticate
+make requests
 
 # **Checklist de Tarefas**
 
