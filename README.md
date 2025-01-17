@@ -17,10 +17,10 @@ npm run prisma:studio
 ```bash
 npm run test:e2e
 ```
-with swagger: go to http://localhost:3000/api
-sign up a user
-authenticate
-make requests
+* with swagger: go to http://localhost:3000/api
+* sign up a user
+* authenticate
+* make requests
 
 # **Checklist de Tarefas**
 
@@ -73,14 +73,23 @@ make requests
 
 # Estrutura de pastas
 src
+
   http
+  
     controllers
+    
   database
+  
     ..
+    
   domain
+  
     entities
+    
     ..
+    
     repositories
+    
     ..
 
 # O que faria se houvesse mais tempo
