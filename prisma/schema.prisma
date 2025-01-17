@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Producer {
+  id           String         @id @default(uuid())
+  name         String
+  cpfCnpj      String         @unique
+  properties   Property[]
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model Property {
+  id               String         @id @default(uuid())
+  name             String
+  city             String
+  state            String
+  totalArea        Float
+  arableArea       Float
+  vegetationArea   Float
+  producerId       String
+  producer         Producer       @relation(fields: [producerId], references: [id])
+  crops            Crop[]
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+}
+
+model Crop {
+  id          String   @id @default(uuid())
+  name        String
+  season      String
+  propertyId  String
+  property    Property @relation(fields: [propertyId], references: [id])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
