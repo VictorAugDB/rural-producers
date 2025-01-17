@@ -34,12 +34,6 @@ npm run test:e2e
     - [x] Produtor -> Propriedades rurais.
     - [x] Propriedade -> Culturas plantadas.
 
-- [x] **Validações no Banco**
-  - [x] Garantir que `cpfCnpj` seja único.
-  - [x] Garantir que `totalArea >= arableArea + vegetationArea` (validação lógica).
-  - [x] Implementar chave estrangeira entre propriedades e produtores.
-  - [x] Implementar chave estrangeira entre culturas e propriedades.
-
 ## Backend
 - [x] **Configuração Inicial**
   - [x] Configurar backend com Nestjs e Prisma.
