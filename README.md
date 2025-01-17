@@ -104,3 +104,5 @@ src
 9. Separação dos controllers
 10. Daria um pouco mais de atenção a estrutura de pastas
 11. Testaria mais extensivamente a aplicação para detectar possíveis bugs.
+12. RBAC (Producer poderia logar e fazer algumas coisas como adicionar culturas)
+13. Subir no Render com um banco de dados postgres free.
