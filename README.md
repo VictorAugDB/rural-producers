@@ -47,12 +47,12 @@ npm run test:e2e
   - [x] **Produtores Rurais**
     - [x] Criar endpoint para cadastro de produtores.
     - [x] Criar endpoint para edição de produtores.
-    - [x] Criar endpoint para exclusão de produtores.
+    - [] Criar endpoint para exclusão de produtores.
     - [x] Validar formato de CPF e CNPJ no backend.
   - [x] **Propriedades Rurais**
     - [x] Criar endpoint para cadastro de propriedades.
     - [x] Criar endpoint para edição de propriedades.
-    - [x] Criar endpoint para exclusão de propriedades.
+    - [] Criar endpoint para exclusão de propriedades.
     - [x] Validar que `arableArea + vegetationArea <= totalArea`.
   - [x] **Culturas Plantadas**
     - [x] Criar endpoint para registro de culturas plantadas por safra.
