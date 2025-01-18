@@ -8,6 +8,9 @@ npm run prisma:push
 npm run start:dev
 ```
 
+* There are an envSchema file with the required environment variables
+* Create a .env with these variables
+
 # Checking database
 ```bash
 npm run prisma:studio
